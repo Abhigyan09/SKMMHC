@@ -1,0 +1,99 @@
+.FAQ__accordian {
+    width: 65%;
+  }
+  .FAQ__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 19px;
+    background-color:#7253d9;
+    border: 1px solid #9305f1;
+    color: white;
+  }
+  
+  .FAQ__visible {
+    background-color: #fcf4f4;
+    border-top: 1px solid rgb(255, 254, 254);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .FAQ__visible > p {
+    margin: 1rem;
+    color:rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .FAQ__list__container {
+    border-top: 8px solid #fcf8f8;
+    padding: 2rem 0;
+  }
+  .FAQ__heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+    color:#7253d9;
+  }
+  
+  .FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .FAQ__get__started__email {
+    text-align: center;
+  }
+  
+  .FAQ__get__started__email > h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+
+  /* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .FAQ__accordian {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .FAQ__title {
+    font-size: 16px; /* Decrease font size */
+    padding: 12px 16px; /* Adjust padding */
+  }
+
+  .FAQ__heading {
+    font-size: 24px; /* Decrease font size */
+    margin: 1rem 2rem; /* Adjust margins */
+  }
+
+  .FAQ__visible > p {
+    font-size: 1.2rem; /* Decrease font size */
+    margin: 0.5rem; /* Adjust margins */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .FAQ__title {
+    font-size: 14px; /* Further decrease font size */
+    padding: 10px 14px; /* Further adjust padding */
+  }
+
+  .FAQ__heading {
+    font-size: 20px; /* Further decrease font size */
+    margin: 1rem 1rem; /* Further adjust margins */
+  }
+
+  .FAQ__visible > p {
+    font-size: 1.6rem; /* Further decrease font size */
+    margin: 0.5rem; /* Further adjust margins */
+  }
+}
+
+
+ 

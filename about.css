@@ -1,0 +1,111 @@
+.containerk {
+	padding: 0 100px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 101rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5rem;
+} 
+
+.title {
+	font-size: 36px;
+	font-weight: bold;
+	color: #f36929;
+	margin-bottom: 10px;
+}
+
+.school-name {
+	font-size: 50px;
+	font-weight: bold;
+	color:var(--primary-color);
+	margin-bottom: 20px;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.description {
+	font-size: 20px;
+	color: #474646;
+	margin-bottom: 20px;
+}
+#description1 {
+    font-weight: 1000;
+    color:#666;
+    font-size: 19px;
+	
+}
+
+
+.magic {
+	font-size: 24px;
+	font-weight: bold;
+	color: #00698f;
+	margin-top: 20px;
+}
+
+.text{
+    width: 60%;
+}
+
+.img3 img{
+    width: 45rem;
+    height: 40rem;
+}
+
+  
+
+    /* Add your responsive CSS here or link to an external stylesheet */
+    @media (max-width: 991px) {
+        /* Adjustments for tablets and smaller screens */
+        .containerk {
+            padding: 20px; /* Adjusted padding for better spacing */
+            display: flex;
+            flex-direction: column-reverse; /* Stack items in reverse order */
+            align-items: center; /* Center items horizontally */
+			height: 165rem;
+        }
+
+        .text {
+            width: 100%; /* Full width on smaller screens */
+            text-align: justify-content; /* Center align text */
+        }
+
+        .img3 {
+            width: 100%; /* Full width for the image container */
+            margin-top: 20px; /* Add some top margin for spacing */
+        }
+
+        .img3 img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+        }
+		
+    }
+
+    @media (max-width: 768px) {
+        /* Adjustments for mobile devices */
+        .text {
+            padding: 0 10px; /* Adjust padding for better readability */
+        }
+    }
+
+    @media (max-width: 450px) {
+        /* Further adjustments for small mobile devices */
+        .title {
+            font-size: 24px; /* Decrease font size */
+        }
+
+        .school-name {
+            font-size: 32px; /* Decrease font size */
+        }
+
+        .description,
+        #description1,
+        .magic {
+            font-size: 14px; /* Decrease font size */
+        }
+    }
+
+    
+	
